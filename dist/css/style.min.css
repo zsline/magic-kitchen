@@ -1,0 +1,467 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Manrope;
+  font-display: swap;
+  src: url("../fonts/Manrope-Bold.woff2") format("woff2"), url("../fonts/Manrope-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Manrope;
+  font-display: swap;
+  src: url("../fonts/Manrope-ExtraBold.woff2") format("woff2"), url("../fonts/Manrope-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Manrope;
+  font-display: swap;
+  src: url("../fonts/Manrope-ExtraLight.woff2") format("woff2"), url("../fonts/Manrope-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Manrope;
+  font-display: swap;
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Manrope;
+  font-display: swap;
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Manrope;
+  font-display: swap;
+  src: url("../fonts/Manrope-Light.woff2") format("woff2"), url("../fonts/Manrope-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Manrope;
+  font-display: swap;
+  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"), url("../fonts/Manrope-SemiBold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-BlackItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BlackItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-ExtraBold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-ExtraBoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Medium.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-MediumItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-MediumItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-SemiBold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-SemiBold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-SemiBoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-SemiBoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --bege-light: #F0EACF;
+  --dark: #393636;
+  --bege-dark: #7C7670;
+  --light: #F9F9F9;
+  --pistachio: #758554;
+  --avocado: #D1DC92;
+  --yellow: #FFE37D;
+  --white: #ffffff;
+  --grey: #393939;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  height: 100%;
+  color: var(--dark);
+}
+
+h1 {
+  font-family: "PlayfairDisplay", serif;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 110%;
+}
+
+h2 {
+  font-family: "PlayfairDisplay", serif;
+  font-weight: 900;
+  font-size: 82px;
+  line-height: 110%;
+  color: var(--bege-dark);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+nav {
+  color: var(--bege-light);
+}
+
+nav a {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--bege-light);
+  transition: all 0.3s;
+  outline: none;
+}
+nav a.active {
+  color: var(--avocado);
+  cursor: default;
+}
+
+nav a:hover, nav a:focus, nav a:active {
+  color: var(--avocado);
+}
+
+.lead {
+  font-size: 24px;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+.t-20 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: var(--yellow);
+  color: var(--dark);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--pistachio);
+}
+
+.center {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: var(--pistachio);
+  padding: 34px 0;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__wrapper ul {
+  display: flex;
+}
+.header__wrapper ul li {
+  display: block;
+  margin-left: 42px;
+}
+.header__wrapper ul li ul.leng li {
+  margin-left: 0;
+}
+.header__wrapper ul li:first-child {
+  margin-left: 0;
+}
+
+.hero-home {
+  position: relative;
+  background-image: url(../img/home-hero-bg.png);
+  min-height: 85vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+.hero-home h1 {
+  color: var(--avocado);
+  max-width: 700px;
+}
+.hero-home__desc {
+  max-width: 568px;
+  margin-top: 33px;
+  color: var(--bege-light);
+}
+.hero-home .btn {
+  margin-top: 43px;
+}
+.hero-home .btn:hover {
+  background-color: var(--avocado);
+}
+
+.hero-home__img {
+  position: absolute;
+  top: auto;
+  bottom: -34px;
+  right: 0;
+  width: 50vw;
+  max-width: 724px;
+  height: auto;
+}
+
+.hero-home__img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.about-home {
+  padding: 72px 0 98px;
+}
+.about-home__wrapper {
+  display: flex;
+  gap: 128px;
+}
+.about-home__info {
+  max-width: 555px;
+}
+.about-home__info .btn {
+  margin-top: 30px;
+}
+.about-home__subtitle {
+  margin-bottom: 30px;
+}
+.about-home h2 {
+  margin-bottom: 30px;
+}
+.about-home__img {
+  max-width: 338px;
+  aspect-ratio: 1/1;
+  border-radius: 200px;
+  overflow: hidden;
+  margin-left: 22px;
+}
+.about-home__img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.new-home {
+  background-color: var(--light);
+  padding-top: 70px;
+  padding-bottom: 88px;
+}
+.new-home h2 {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.new-home__inner {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.new-home__item {
+  width: 23%;
+}
+.new-home__item--img {
+  display: block;
+  aspect-ratio: 1.26/1;
+  margin-bottom: 28px;
+  overflow: hidden;
+}
+.new-home__item--img img {
+  width: 100%;
+  object-fit: cover;
+  scale: 100%;
+  transition: all 0.5s ease-out;
+}
+.new-home__item--img img:hover {
+  scale: 115%;
+}
+.new-home__item.big {
+  padding: 44px;
+  width: 48.5%;
+  background-color: var(--white);
+}
+.new-home__item.big .new-home__item--title {
+  font-family: "PlayfairDisplay", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  color: var(--bege-dark);
+  transition: all 0.3s;
+}
+.new-home__item.big .new-home__item--title:hover {
+  color: var(--dark);
+}
+.new-home__item--tags {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--pistachio);
+}
+.new-home__item--tags a {
+  color: var(--pistachio);
+  transition: all 0.3s;
+}
+.new-home__item--tags a:hover {
+  color: var(--avocado);
+}
+.new-home__item--title {
+  transition: all 0.3s;
+}
+.new-home__item--title:hover {
+  color: var(--bege-dark);
+}
+.new-home__item.item-biseness {
+  text-align: center;
+}
+.new-home__item.item-biseness .new-home__item--tags {
+  justify-content: center;
+}
+.new-home__item.item-biseness .new-home__item--img {
+  width: 107px;
+  height: 107px;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+}
+.new-home__item.item-biseness .new-home__item--img img {
+  object-position: center;
+}
+.new-home__item.item-blog {
+  padding-bottom: 0;
+  text-align: center;
+}
+.new-home__item.item-blog .new-home__item--tags {
+  justify-content: center;
+}
+.new-home__item.item-blog .new-home__item--img {
+  width: 67%;
+  aspect-ratio: 2/1;
+  margin-top: 40px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.new-home .btn {
+  margin-top: 75px;
+}
