@@ -2,6 +2,10 @@
 @import "fonts";
 @import "root";
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Manrope", sans-serif;
     font-size: 16px;
@@ -9,6 +13,7 @@ body{
     font-weight: 400;
     height: 100%;
     color: var(--dark);
+    overflow-x: hidden;
 }
 h1{
     font-family: "PlayfairDisplay", serif;
@@ -23,18 +28,8 @@ h2{
     line-height: 110%;
     color: var(--bege-dark);
 }
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-.main{
-    flex: 1 1 auto;
-}
-.container{
-    max-width: 1160px;
-    padding: 0 10px;
-    margin: 0 auto;
+a{
+    outline: none;
 }
 nav{
     color: var(--bege-light);
@@ -56,6 +51,19 @@ nav a {
 nav a:hover, nav a:focus, nav a:active {
     color: var(--avocado);
 }
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main{
+    flex: 1 1 auto;
+}
+.container{
+    max-width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
 .lead{
     font-size: 24px;
     line-height: 140%;
@@ -67,7 +75,10 @@ nav a:hover, nav a:focus, nav a:active {
     line-height: 140%;
 
 }
-
+.caption{
+    font-size: 14px;
+    line-height: 140%;
+}
 .btn{
     display: inline-block;
     padding: 14px 36px;
@@ -87,11 +98,19 @@ nav a:hover, nav a:focus, nav a:active {
     width: max-content;
     margin: 0 auto;
 }
+.citate-author {
+    font-family: "PlayfairDisplay", sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 130%;
+    color: var(--bege-dark);
+}
 //  Header =====================
 
 .header{
     background-color: var(--pistachio);
-    padding: 34px 0;
+    padding: 29.8px 0;
     &__wrapper{
         display: flex;
         justify-content: space-between;
@@ -112,6 +131,15 @@ nav a:hover, nav a:focus, nav a:active {
     }
 
     } 
+}
+.header-page{
+    position: relative;
+    width: 100%;
+}
+.header--fixed{
+    position: fixed;
+    animation: header 0.5s ease-out;
+    z-index: 999;
 }
 //  Hero =================
 .hero-home {
@@ -288,3 +316,170 @@ nav a:hover, nav a:focus, nav a:active {
         margin-top: 75px;
     }
 }
+
+// =========== ABOUT PAGE ==============
+
+.about-me{
+    margin-top: 88px;
+    &__title{
+        text-align: center;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: var(--pistachio);
+        line-height: 130%;
+        letter-spacing: 0.2em;
+        margin-bottom: 13px;
+    }
+    &__img{
+        width: 134px;
+        height: 134px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 79px;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__excerpt{
+        font-family: "PlayfairDisplay", sans-serif;
+        font-size: 32px;
+        line-height: 110%;
+        font-style: normal;
+        font-weight: 700;
+        color: var(--bege-dark);
+        text-align: center;
+        max-width: 794px;
+        margin: 0 auto 48px;
+    }
+    &__content{
+        margin-left: 18%;
+        p{
+            margin-right: 18%;
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+    &__accent{
+        display: flex;
+        align-items: center;
+        gap: 10%;
+        margin: 50px 0;
+        &--img{
+            max-width: 215px;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        &--text{
+
+        }
+    }
+}
+.about-diet{
+    .container{
+        position: relative;
+    }
+    &__dec{
+        position: absolute;
+        top: 54px;
+        right: 220px;
+    }
+    margin-bottom: 183px;
+    a{
+        text-decoration: underline;
+    }
+    &__author{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10%;
+        margin-top: 13px;
+        margin-bottom: 48px;
+        &--img{
+            position: relative;
+        }
+        &--text{
+            text-align: right;
+            margin-top: 48px;
+        }
+        &--dec{
+            position: absolute;
+            bottom: -20px;
+            left: -43px;
+        }
+    }
+    &__content{
+        margin: 0 18%;
+    }
+    &__cats{
+        margin: 50px 20px;
+        display: flex;
+        gap: 9%;
+        &--img{
+            width: 215px;
+            height: 215px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex: 0 0 auto;
+            img{
+                display: block;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+}
+
+// =====================================
+.footer{
+    text-align: center;
+    color: var(--bege-light);
+    &__wrapper{
+        padding: 48px 0 67px;
+        background-color: var(--pistachio);
+    }
+    &__social{
+        margin-bottom: 95px;
+        &--title{
+            font-weight: 600;
+            line-height: 130%;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+        &--list{
+            margin-top: 28px;
+            ul{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+    }
+    &__copy{
+        a{
+            display: block;
+            margin-bottom: 13px;
+        }
+    }
+}
+.footer-top{
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+@keyframes header {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }

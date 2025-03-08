@@ -68,91 +68,91 @@ ul, li {
 @font-face {
   font-family: PlayfairDisplay;
   font-display: swap;
-  src: url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Black.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Black.woff") format("woff"), url("../fonts/PlayfairDisplay-Black.ttf") format("ttf");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"), url("../fonts/Manrope-SemiBold.woff") format("woff");
+  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"), url("../fonts/Manrope-SemiBold.woff") format("woff"), url("../fonts/Manrope-SemiBold.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: PlayfairDisplay;
   font-display: swap;
-  src: url("../fonts/PlayfairDisplay-BlackItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BlackItalic.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-BlackItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BlackItalic.woff") format("woff"), url("../fonts/PlayfairDisplay-BlackItalic.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: PlayfairDisplay;
   font-display: swap;
-  src: url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Bold.woff") format("ttf"), url("../fonts/PlayfairDisplay-Bold.woff") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: PlayfairDisplay;
   font-display: swap;
-  src: url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BoldItalic.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BoldItalic.woff") format("woff"), url("../fonts/PlayfairDisplay-BoldItalic.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: PlayfairDisplay;
   font-display: swap;
-  src: url("../fonts/PlayfairDisplay-ExtraBold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-ExtraBold.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-ExtraBold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-ExtraBold.woff") format("woff"), url("../fonts/PlayfairDisplay-ExtraBold.ttf") format("ttf");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: PlayfairDisplay;
   font-display: swap;
-  src: url("../fonts/PlayfairDisplay-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-ExtraBoldItalic.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-ExtraBoldItalic.woff") format("woff"), url("../fonts/PlayfairDisplay-ExtraBoldItalic.ttf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Italic.woff") format("woff"), url("../fonts/PlayfairDisplay-Italic.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: PlayfairDisplay;
   font-display: swap;
-  src: url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Italic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: PlayfairDisplay;
-  font-display: swap;
-  src: url("../fonts/PlayfairDisplay-Medium.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Medium.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-Medium.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Medium.woff") format("woff"), url("../fonts/PlayfairDisplay-Medium.ttf") format("ttf");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: PlayfairDisplay;
   font-display: swap;
-  src: url("../fonts/PlayfairDisplay-MediumItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-MediumItalic.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-MediumItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-MediumItalic.woff") format("woff"), url("../fonts/PlayfairDisplay-MediumItalic.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: PlayfairDisplay;
   font-display: swap;
-  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/PlayfairDisplay-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: PlayfairDisplay;
   font-display: swap;
-  src: url("../fonts/PlayfairDisplay-SemiBold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-SemiBold.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-SemiBold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-SemiBold.woff") format("woff"), url("../fonts/PlayfairDisplay-SemiBold.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: PlayfairDisplay;
   font-display: swap;
-  src: url("../fonts/PlayfairDisplay-SemiBoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-SemiBoldItalic.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-SemiBoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-SemiBoldItalic.woff") format("woff"), url("../fonts/PlayfairDisplay-SemiBoldItalic.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -168,6 +168,10 @@ ul, li {
   --grey: #393939;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -175,6 +179,7 @@ body {
   font-weight: 400;
   height: 100%;
   color: var(--dark);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -192,20 +197,8 @@ h2 {
   color: var(--bege-dark);
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main {
-  flex: 1 1 auto;
-}
-
-.container {
-  max-width: 1160px;
-  padding: 0 10px;
-  margin: 0 auto;
+a {
+  outline: none;
 }
 
 nav {
@@ -231,6 +224,22 @@ nav a:hover, nav a:focus, nav a:active {
   color: var(--avocado);
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .lead {
   font-size: 24px;
   line-height: 140%;
@@ -240,6 +249,11 @@ nav a:hover, nav a:focus, nav a:active {
 .t-20 {
   font-weight: 600;
   font-size: 20px;
+  line-height: 140%;
+}
+
+.caption {
+  font-size: 14px;
   line-height: 140%;
 }
 
@@ -265,9 +279,18 @@ nav a:hover, nav a:focus, nav a:active {
   margin: 0 auto;
 }
 
+.citate-author {
+  font-family: "PlayfairDisplay", sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--bege-dark);
+}
+
 .header {
   background-color: var(--pistachio);
-  padding: 34px 0;
+  padding: 29.8px 0;
 }
 .header__wrapper {
   display: flex;
@@ -286,6 +309,17 @@ nav a:hover, nav a:focus, nav a:active {
 }
 .header__wrapper ul li:first-child {
   margin-left: 0;
+}
+
+.header-page {
+  position: relative;
+  width: 100%;
+}
+
+.header--fixed {
+  position: fixed;
+  animation: header 0.5s ease-out;
+  z-index: 999;
 }
 
 .hero-home {
@@ -464,4 +498,161 @@ nav a:hover, nav a:focus, nav a:active {
 }
 .new-home .btn {
   margin-top: 75px;
+}
+
+.about-me {
+  margin-top: 88px;
+}
+.about-me__title {
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--pistachio);
+  line-height: 130%;
+  letter-spacing: 0.2em;
+  margin-bottom: 13px;
+}
+.about-me__img {
+  width: 134px;
+  height: 134px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 79px;
+}
+.about-me__img img {
+  width: 100%;
+  object-fit: cover;
+}
+.about-me__excerpt {
+  font-family: "PlayfairDisplay", sans-serif;
+  font-size: 32px;
+  line-height: 110%;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--bege-dark);
+  text-align: center;
+  max-width: 794px;
+  margin: 0 auto 48px;
+}
+.about-me__content {
+  margin-left: 18%;
+}
+.about-me__content p {
+  margin-right: 18%;
+}
+.about-me__content a {
+  text-decoration: underline;
+}
+.about-me__accent {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  margin: 50px 0;
+}
+.about-me__accent--img {
+  max-width: 215px;
+  width: 100%;
+}
+.about-me__accent--img img {
+  width: 100%;
+}
+.about-diet {
+  margin-bottom: 183px;
+}
+.about-diet .container {
+  position: relative;
+}
+.about-diet__dec {
+  position: absolute;
+  top: 54px;
+  right: 220px;
+}
+.about-diet a {
+  text-decoration: underline;
+}
+.about-diet__author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  margin-top: 13px;
+  margin-bottom: 48px;
+}
+.about-diet__author--img {
+  position: relative;
+}
+.about-diet__author--text {
+  text-align: right;
+  margin-top: 48px;
+}
+.about-diet__author--dec {
+  position: absolute;
+  bottom: -20px;
+  left: -43px;
+}
+.about-diet__content {
+  margin: 0 18%;
+}
+.about-diet__cats {
+  margin: 50px 20px;
+  display: flex;
+  gap: 9%;
+}
+.about-diet__cats--img {
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+.about-diet__cats--img img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  text-align: center;
+  color: var(--bege-light);
+}
+.footer__wrapper {
+  padding: 48px 0 67px;
+  background-color: var(--pistachio);
+}
+.footer__social {
+  margin-bottom: 95px;
+}
+.footer__social--title {
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.footer__social--list {
+  margin-top: 28px;
+}
+.footer__social--list ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer__copy a {
+  display: block;
+  margin-bottom: 13px;
+}
+
+.footer-top {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+@keyframes header {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
