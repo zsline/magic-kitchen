@@ -10,20 +10,21 @@ body{
     font-family: "Manrope", sans-serif;
     font-size: 16px;
     line-height: 140%;
-    font-weight: 400;
+    font-weight: 300;
+    font-variant-numeric: lining-nums proportional-nums;
     height: 100%;
     color: var(--dark);
     overflow-x: hidden;
 }
 h1{
     font-family: "PlayfairDisplay", serif;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 100px;
     line-height: 110%;
 }
 h2{
     font-family: "PlayfairDisplay", serif;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 82px;
     line-height: 110%;
     color: var(--bege-dark);
@@ -59,6 +60,16 @@ nav a:hover, nav a:focus, nav a:active {
 .main{
     flex: 1 1 auto;
 }
+img{
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+}
+video{
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+}
 .container{
     max-width: 1160px;
     padding: 0 10px;
@@ -68,6 +79,14 @@ nav a:hover, nav a:focus, nav a:active {
     font-size: 24px;
     line-height: 140%;
     font-weight: 400;
+}
+.big-title{
+    font-family: "PlayfairDisplay", serif;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 110%;
+    color: var(--bege-dark);
+    text-align: center;
 }
 .t-20{
     font-weight: 600;
@@ -93,6 +112,11 @@ nav a:hover, nav a:focus, nav a:active {
 .btn:hover{
     background-color: var(--pistachio);
 }
+.flex-a-center{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
 .center {
     display: block;
     width: max-content;
@@ -105,6 +129,37 @@ nav a:hover, nav a:focus, nav a:active {
     font-weight: 500;
     line-height: 130%;
     color: var(--bege-dark);
+}
+.min-title{
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--pistachio);
+    line-height: 130%;
+    letter-spacing: 0.2em;
+}
+.other-posts{
+    background-color: var(--light);
+    padding: 71px 0 143px;
+    .blog__wrapper{
+        margin: 69px 0;
+    }
+}
+.date {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.date a{
+    transition: all 0.3s;
+}
+.date a:hover{
+    color: var(--bege-dark);
+}
+.citate{
+    font-family: "PlayfairDisplay", serif;
+    font-size: 32px;
+    line-height: 130%;
 }
 //  Header =====================
 
@@ -217,12 +272,7 @@ nav a:hover, nav a:focus, nav a:active {
         text-align: center;
         margin-bottom: 75px;
     }
-    &__inner{
-        display: flex;
-        justify-content: start;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
+
     &__item{
         width: 23%;
         &--img{
@@ -322,12 +372,6 @@ nav a:hover, nav a:focus, nav a:active {
 .about-me{
     margin-top: 88px;
     &__title{
-        text-align: center;
-        font-size: 10px;
-        text-transform: uppercase;
-        color: var(--pistachio);
-        line-height: 130%;
-        letter-spacing: 0.2em;
         margin-bottom: 13px;
     }
     &__img{
@@ -373,9 +417,6 @@ nav a:hover, nav a:focus, nav a:active {
             img{
                 width: 100%;
             }
-        }
-        &--text{
-
         }
     }
 }
@@ -435,6 +476,135 @@ nav a:hover, nav a:focus, nav a:active {
     }
 }
 
+// =============== BLOG PAGE ================
+
+.blog {
+    background-color: var(--light);
+    padding-top: 71px;
+    padding-bottom: 146px;
+    h1{
+        text-align: center;
+        color: var(--bege-dark);
+    }
+    &__tags{
+        width: 75%;
+        margin: 32px auto 75px;
+        ul{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            li{
+                a {
+                display: block;
+                padding: 10px 15px;
+                font-size: 10px;
+                font-weight: 600;
+                line-height: 130%;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                background-color: var(--avocado);
+                border-radius: 10px; 
+                transition: all 0.3s;
+                &:hover{
+                    background-color: var(--pistachio);
+                    color: var(--bege-light);
+                }
+                }
+            }
+        }
+    }
+    &__wrapper{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2%;
+    }
+    &__item{
+        margin-bottom: 30px;
+    }
+}
+
+// =====================================
+
+// ========== POST PAGE ===============
+
+.post{
+    padding: 88px 0 0;
+    margin-bottom: -24px;
+    &__wrapper{
+        max-width: 945px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1{
+        font-family: "PlayfairDisplay", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 110%;
+        color: var(--bege-dark);
+        text-align: center;
+        max-width: 794px;
+        margin: 13px auto 30px;
+    }
+    &__publishe{
+        justify-content: center;
+        gap: 20px;
+        font-weight: 400;
+    }
+    &__media{
+        margin: 60px 0;
+    }
+    &__footer{
+        width: 80%;
+        margin: 90px auto 178px;
+    }
+    &__share{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        &--tags{
+            width: max-content;
+            margin: 0;
+        }
+        &--links{
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 100%;
+            rect {
+                fill: #7C7670;
+                transition: all 0.3s;
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+        }
+    }
+    &__post-recipe{
+        width: 80%;
+        margin: 0 auto;
+        &--citate{
+            text-align: right;
+            max-width: 555px;
+            color: var(--bege-dark);
+            margin-left: auto;
+            .citate{
+                margin-bottom: 11px;
+            }
+        }
+    }
+}
+.post__share--links a:hover  rect {
+    fill: var(--grey);
+}
 // =====================================
 .footer{
     text-align: center;

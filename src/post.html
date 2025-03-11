@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Статья" })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html',{})
+      <main class="main">
+        <div class="post">
+          <div class="container">
+            <div class="post__wrapper">
+              <div class="min-title">Блог</div>
+              <h1>
+                Vegan Bankery. Зачем разрешать? Про акции. Эпизод 3. Финансовые
+                рецепты
+              </h1>
+              @@include('html/publishe.html', {"author":"Екатерина Ивченко",
+              "date":"29 февраля 2025"})
+              <div class="post__media">
+                <img src="@img/post-1.jpg" alt="" />
+                <!-- <video
+                  src="https://videocdn.cdnpk.net/videos/0a063902-34bf-4a44-9613-c39f2b51f9de/horizontal/previews/watermarked/large.mp4"
+                  autoplay
+                  loop
+                  controls
+                  muted
+                ></video> -->
+              </div>
+              <div class="post__content">
+                <p>
+                  Современное массовое производство мяса и молока очень
+                  токсично. Вот лишь один пример: при производстве мяса для
+                  одного бургера расходуется столько же воды сколько 1 человеку
+                  достаточно для ежедневного душа в течение 3 месяцев. При этом
+                  выделяется столько же углекислого газа, сколько выбрасывает
+                  машина за поездку из Петербурга в Москву!
+                </p>
+                <p>
+                  Растительная диета не приносит смерть и страдания животным,
+                  которых мы все на самом деле очень любим. За 8 лет моего
+                  веганского образа жизни  я обнаружила, что растительная диета
+                  необыкновенно вкусная и разнообразная.
+                </p>
+                <p>
+                  Я слежу за  исследованиями и достижениями науки о пользе
+                  зеленого питания и его положительного влияние на иммунитет,
+                  снижение рисков сердечно- сосудистых и раковых,
+                  неврологических заболеваний и проблем головного мозга.
+                </p>
+                <p>
+                  Мои рецепты просты в применение и не требуют экзотических
+                  ингредиентов — в плотном графике работы по-другому просто не
+                  получится.
+                </p>
+                <p>
+                  Мои рецепты можно посмотреть на страничке Facebook — которую я
+                  начала вести более года назад, чтобы поделиться с моими
+                  друзьями, ТриЙожками и учениками вкусными рецептами и знаниями
+                  о богатствах, припасенной Природой в своих кладовых.
+                </p>
+              </div>
+              <div class="post__footer">
+                <div class="post__share">
+                  <div class="post__share--tags blog__tags">
+                    <ul>
+                      <li><a href="#">бизнес</a></li>
+                    </ul>
+                  </div>
+                  @@include('html/share-dark.html' ,{})
+                </div>
+                <div class="post_navigation"></div>
+                <div id="comments" class="comments"></div>
+                <div id="respond" class="comment-respond"></div>
+              </div>
+            </div>
+          </div>
+          @@include('html/other-posts.html', {})
+        </div>
+      </main>
+      @@include('html/footer.html',{})
+    </div>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

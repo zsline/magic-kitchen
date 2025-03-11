@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Статья" })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html',{})
+      <main class="main">
+        <div class="post">
+          <div class="container">
+            <div class="post__wrapper">
+              <div class="min-title">Блог</div>
+              <h1>
+                Веганский гид по Амстердаму. Рецепт веганского мак-н-чиз от
+                Willcroft
+              </h1>
+              @@include('html/publishe.html', {"author":"Екатерина Ивченко",
+              "date":"29 февраля 2025"})
+              <div class="post__media">
+                <img src="@img/post-recipe.jpg" alt="" />
+                <!-- <video
+                  src="https://videocdn.cdnpk.net/videos/0a063902-34bf-4a44-9613-c39f2b51f9de/horizontal/previews/watermarked/large.mp4"
+                  autoplay
+                  loop
+                  controls
+                  muted
+                ></video> -->
+              </div>
+              <div class="post__post-recipe">
+                <div class="post__post-recipe--citate">
+                  <div class="citate">
+                    Лук в твоих объятиях — проходит всякая болезнь
+                  </div>
+                  <div class="date">Восточная пословица</div>
+                </div>
+                <div class="post__post-recipe--content"></div>
+              </div>
+              <div class="post__content post-recipe"></div>
+              <div class="post__footer">
+                <div class="post__share">
+                  <div class="post__share--tags blog__tags">
+                    <ul>
+                      <li><a href="#">бизнес</a></li>
+                    </ul>
+                  </div>
+                  @@include('html/share-dark.html' ,{})
+                </div>
+                <div class="post_navigation"></div>
+                <div id="comments" class="comments"></div>
+                <div id="respond" class="comment-respond"></div>
+              </div>
+            </div>
+          </div>
+          @@include('html/other-posts.html', {})
+        </div>
+      </main>
+      @@include('html/footer.html',{})
+    </div>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
