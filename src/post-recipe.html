@@ -133,9 +133,29 @@
                                 <p>2 ст. ложки (разделить)</p>
                             </li>
                             <li>
+                                <p>Тимьян</p>
+                                <span></span>
+                                <p>5 веточек</p>
+                            </li>
+                            <li>
+                                <p>Бальзамический уксус</p>
+                                <span></span>
+                                <p>2 ст. ложки</p>
+                            </li>
+                            <li>
                                 <p>Овощной бульон</p>
                                 <span></span>
                                 <p>2 кубика овощного бульона на 4 стакана воды (1 л)  или 4 стакана овощного бульона ( 1 л)</p>
+                            </li>
+                            <li>
+                                <p>Вода</p>
+                                <span></span>
+                                <p>1-2 стакана</p>
+                            </li>
+                            <li>
+                                <p>Лавровый лист</p>
+                                <span></span>
+                                <p>2-3 шт.</p>
                             </li>
                             <li>
                                 <p>Гренки или подсушенный хлеб, порезанный на кубики или крутоны</p>
@@ -165,19 +185,19 @@
                     </ol>
                     <p>Рецептом и фотографиями  поделилась преподавательница  ТриЙоги Сантоши Деви. Сантоши побаловала кулинарным шедевром, когда недавно навестила нас в Вене.  Также в блоге  можно прочитать ее веганский гид по Гранаде : в мае 2018 года Сантоши преподавала программу ТриЙогу  в Испании.</p>
                 </div>
-              <div class="post__footer">
-                <div class="post__share">
-                  <div class="post__share--tags blog__tags">
-                    <ul>
-                      <li><a href="#">бизнес</a></li>
-                    </ul>
-                  </div>
-                  @@include('html/share-dark.html' ,{})
+            </div>
+            <div class="post__footer">
+              <div class="post__share">
+                <div class="post__share--tags blog__tags">
+                  <ul>
+                    <li><a href="#">бизнес</a></li>
+                  </ul>
                 </div>
-                <div class="post_navigation"></div>
-                <div id="comments" class="comments"></div>
-                <div id="respond" class="comment-respond"></div>
+                @@include('html/share-dark.html' ,{})
               </div>
+                @@include('html/post-nav.html', {})
+              <div id="comments" class="comments"></div>
+              @@include('html/respond.html', {})
             </div>
           </div>
           @@include('html/other-posts.html', {})

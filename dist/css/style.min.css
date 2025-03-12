@@ -23,6 +23,12 @@ ul, li {
   padding: 0;
 }
 
+input[type=submit i] {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 @font-face {
   font-family: Manrope;
   font-display: swap;
@@ -395,6 +401,101 @@ video {
   font-family: "PlayfairDisplay", serif;
   font-size: 32px;
   line-height: 130%;
+}
+
+.post-navigation {
+  margin-bottom: 90px;
+}
+.post-navigation .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  height: 100%;
+}
+.post-navigation .nav-item {
+  position: relative;
+  width: 40%;
+  padding: 30px;
+  border: 1px solid var(--bege-light);
+  border-radius: 4px;
+}
+.post-navigation .nav-item img {
+  width: 21px;
+  height: 33px;
+}
+.post-navigation .nav-item span:nth-child(1) {
+  position: absolute;
+}
+.post-navigation .nav-item span:nth-child(2) {
+  display: block;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 130%;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--pistachio);
+  margin-bottom: 16px;
+}
+.post-navigation .nav-item span:nth-child(3) {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  color: var(--dark);
+}
+.post-navigation .nav-previous span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%);
+  left: -18%;
+}
+.post-navigation .nav-next span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%);
+  right: -18%;
+}
+.post-navigation .nav-next span:nth-child(2) {
+  text-align: right;
+}
+.post-navigation .nav-next span:nth-child(3) {
+  display: inline-block;
+  text-align: right;
+  margin-left: auto;
+}
+
+.comment-reply-title {
+  color: var(--bege-dark);
+}
+
+form .comment-notes {
+  color: var(--bege-dark);
+  font-size: 16px;
+}
+form label {
+  display: block;
+  font-size: 14px;
+  line-height: 140%;
+  margin-bottom: 10px;
+  color: var(--bege-dark);
+}
+form textarea {
+  width: 100%;
+  border: 1px solid var(--bege-light);
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+}
+form input[type=text] {
+  border: 1px solid var(--bege-light);
+  border-radius: 4px;
+  outline: none;
+  height: 39px;
+  max-width: 456px;
+  width: 100%;
+}
+form p {
+  margin-bottom: 28px;
 }
 
 .header {

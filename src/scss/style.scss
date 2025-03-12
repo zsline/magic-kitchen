@@ -200,6 +200,113 @@ video{
     font-size: 32px;
     line-height: 130%;
 }
+// ============ POST NAVIGATION ================
+
+.post-navigation{
+    margin-bottom: 90px;
+    .nav-links{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 30px;
+        height: 100%;
+    }
+    .nav-item {
+        position: relative;
+        width: 40%;
+        padding: 30px;
+        border: 1px solid var(--bege-light);
+        border-radius: 4px;
+        img{
+            width: 21px;
+            height: 33px;
+        }
+        span:nth-child(1){
+            position: absolute;
+        }
+        span:nth-child(2){
+            display: block;
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 130%;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            color: var(--pistachio);
+            margin-bottom: 16px;
+        }
+        span:nth-child(3){
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: normal;
+            text-transform: capitalize;
+            color: var(--dark);
+        }
+    }
+    .nav-previous{
+        span:nth-child(1){
+            top: 50%;
+            transform: translateY(-50%);
+            left: -18%;
+        }
+
+    }
+    .nav-next {
+        span:nth-child(1){
+            top: 50%;
+            transform: translateY(-50%);
+            right: -18%;
+        }
+        span:nth-child(2){
+            text-align: right;
+        }
+        span:nth-child(3){
+            display: inline-block;
+            text-align: right;
+            margin-left: auto;
+        }
+    }
+}
+
+// =============================================
+// ======= WP comment-respond =================
+.comment-reply-title{
+    color: var(--bege-dark);
+}
+
+form {
+    .comment-notes{
+        color: var(--bege-dark);
+        font-size: 16px;
+    }
+    label {
+        display: block;
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 10px;
+        color: var(--bege-dark);
+    }
+    textarea {
+        width: 100%;
+        border: 1px solid var(--bege-light);
+        border-radius: 4px;
+        outline: none;
+        resize: none;
+    }
+    input[type = "text"]{
+        border: 1px solid var(--bege-light);
+        border-radius: 4px;
+        outline: none;
+        height: 39px;
+        max-width: 456px;
+        width: 100%;
+    }
+    p{
+        margin-bottom: 28px;
+    }
+}
+
+// ============================================
 //  Header =====================
 
 .header{
