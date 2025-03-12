@@ -198,6 +198,21 @@ h2 {
   color: var(--bege-dark);
 }
 
+h3 {
+  font-family: "PlayfairDisplay", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+}
+
+h5 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
 a {
   outline: none;
 }
@@ -210,7 +225,7 @@ nav a {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   line-height: 130%;
-  letter-spacing: 5px;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   color: var(--bege-light);
   transition: all 0.3s;
@@ -223,6 +238,35 @@ nav a.active {
 
 nav a:hover, nav a:focus, nav a:active {
   color: var(--avocado);
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: num;
+  margin: 0 0 0 35px;
+  padding: 15px 0 5px 0;
+  font-size: 18px;
+}
+
+ol li {
+  position: relative;
+  margin: 0 0 17px 0;
+  padding: 0 0 8px 20px;
+}
+
+ol li:before {
+  content: counter(num) ".";
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  font-family: "PlayfairDisplay", serif;
+  font-weight: 600;
+  font-size: 32px;
+  top: 0px;
+  left: -26px;
+  width: 17px;
+  color: var(--bege-dark);
+  text-align: right;
 }
 
 .wrapper {
@@ -268,7 +312,7 @@ video {
   text-align: center;
 }
 
-.t-20 {
+.t-20, b {
   font-weight: 600;
   font-size: 20px;
   line-height: 140%;
@@ -782,6 +826,100 @@ video {
 }
 .post__post-recipe--citate .citate {
   margin-bottom: 11px;
+}
+.post__post-recipe--content {
+  margin-top: 30px;
+}
+.post__post-recipe--content b {
+  display: block;
+  max-width: 536px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.post__post-recipe--slider {
+  position: relative;
+  margin: 30px 0;
+}
+.post__post-recipe--slide-author {
+  text-align: right;
+  margin-top: 10px;
+  color: var(--bege-dark);
+}
+.post__post-recipe--navigation {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  top: 47%;
+  transform: translateY(-50%);
+}
+.post__post-recipe--prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: var(--bege-light);
+  border-radius: 4px;
+}
+.post__post-recipe--next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: var(--bege-light);
+  border-radius: 4px;
+}
+.post__post-recipe--compound {
+  margin-top: 78px;
+}
+.post__post-recipe h3 {
+  color: var(--bege-dark);
+}
+.post__post-recipe h5 {
+  color: var(--pistachio);
+  margin-bottom: 56px;
+}
+.post__post-recipe--list {
+  margin-top: 44px;
+  padding: 30px;
+  border: 1px solid var(--bege-light);
+  border-radius: 4px;
+}
+.post__post-recipe--list ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 14px;
+}
+.post__post-recipe--list ul li p {
+  margin: 0;
+}
+.post__post-recipe--list ul li p:nth-child(3) {
+  max-width: 267px;
+  text-align: right;
+}
+.post__post-recipe--list ul li span {
+  background-image: url(../img/icons/line-dots.svg);
+  background-repeat: repeat-x;
+  flex-grow: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 2px;
+}
+.post__post-recipe--instruction {
+  margin-top: 78px;
+}
+.post__post-recipe--instruction img {
+  margin-top: 10px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .post__share--links a:hover rect {
