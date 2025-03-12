@@ -464,6 +464,33 @@ video {
   margin-left: auto;
 }
 
+.comments {
+  margin-bottom: 48px;
+}
+.comments h3 {
+  color: var(--bege-dark);
+  margin-bottom: 60px;
+}
+.comments .comment:not(:last-child) {
+  border-bottom: 1px solid var(--bege-light);
+}
+.comments .comment__wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.comments .comment__head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.comments .comment__head img {
+  width: 16px;
+  height: 16px;
+}
+.comments .comment__head span {
+  text-transform: uppercase;
+}
+
 .comment-reply-title {
   color: var(--bege-dark);
 }

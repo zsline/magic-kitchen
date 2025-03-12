@@ -269,6 +269,39 @@ video{
 }
 
 // =============================================
+// ======= WP comments =================
+
+.comments{
+    margin-bottom: 48px;
+    h3{
+        color: var(--bege-dark);
+        margin-bottom: 60px;
+    }
+    .comment{
+        &:not(:last-child){
+            border-bottom: 1px solid var(--bege-light);
+        }
+        &__wrapper{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        &__head{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            img{
+                width: 16px;
+                height: 16px;
+            }
+            span {
+                text-transform: uppercase;
+            }
+        }
+
+    }
+}
+
+// =====================================
 // ======= WP comment-respond =================
 .comment-reply-title{
     color: var(--bege-dark);
