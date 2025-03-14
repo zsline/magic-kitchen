@@ -19,7 +19,7 @@ body{
 h1{
     font-family: "PlayfairDisplay", serif;
     font-weight: 800;
-    font-size: 100px;
+    font-size: clamp(3.25rem, calc(1.73rem + 6.23vw), 6.25rem);
     line-height: 110%;
 }
 h2{
@@ -58,12 +58,23 @@ nav a {
     transition: all 0.3s;
     outline: none;
     &.active{
-        color: var(--avocado);
+        color: var(--light);
         cursor: default; 
     }
 }
 nav a:hover, nav a:focus, nav a:active {
-    color: var(--avocado);
+    color: var(--light);
+}
+@media (max-width: 748px){
+    nav a:hover, nav a:focus, nav a:active {
+        color: var(--bege-dark);
+    }
+    nav a {
+        &.active{
+            color: var(--bege-dark);
+            cursor: default; 
+        }
+    }
 }
 ol {
 	list-style-type: none; 
@@ -95,13 +106,13 @@ ol li:before {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
 }
 .main{
     flex: 1 1 auto;
 }
 img{
     display: inline-block;
-    width: 100%;
     object-fit: cover;
 }
 video{
@@ -115,7 +126,7 @@ video{
     margin: 0 auto;
 }
 .lead{
-    font-size: 24px;
+    font-size: clamp(1.13rem, calc(0.94rem + 0.78vw), 1.5rem);
     line-height: 140%;
     font-weight: 400;
 }
@@ -365,6 +376,12 @@ form {
     }
 
     } 
+    &__btn{
+        display: none;
+    }
+    &__close{
+        display: none;
+    }
 }
 .header-page{
     position: relative;
@@ -375,11 +392,84 @@ form {
     animation: header 0.5s ease-out;
     z-index: 999;
 }
+
+@media (max-width: 748px) {
+    .header{
+        padding: 8px 0px;
+        &__nav{
+            position: absolute;
+            background-color: var(--bege-light);
+            padding: 53px 23px;
+            width: 100%;
+            height: 100vh;
+            top: -100vh;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            transition: all 0.3s;
+            a{
+                font-family: "PlayfairDisplay", serif;
+                font-size: 32px;
+                line-height: 110%;
+                letter-spacing: normal;
+                color: var(--dark);
+                text-transform: none;
+            }
+            ul{
+                flex-direction: column;
+                row-gap: 40px;
+            }
+        }
+        &__wrapper{
+            ul {
+                li{
+                    margin-left: 0;
+                }
+                .leng{
+                    color: var(--dark);
+                    flex-direction: row;
+                    a{
+                        font-family: "Manrope", sans-serif;
+                        font-size: 16px;
+                        line-height: 130%;
+                        letter-spacing: 0.2rem;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        &__btn{
+            display: block;
+            margin-left: auto;
+            margin-right: 10px;
+            width: 37px;
+            height: 33px;
+            background-image: url(../img/icons/open-menu.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            cursor: pointer;
+        }
+        &__close{
+            display: block;
+            position: absolute;
+            width: 37px;
+            height: 33px;
+            top: 7px;
+            right: 20px;
+            background-image: url(../img/icons/close-menu.svg);
+            cursor: pointer;
+        }
+        .open &__nav{
+                top: 0;
+        }
+    }
+}
 //  Hero =================
 .hero-home {
     position: relative;
     background-image: url(../img/home-hero-bg.png);
-    min-height: 85vh;
+    min-height: 68vh;
     // padding-bottom: 146px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -543,6 +633,11 @@ form {
     }
     .btn{
         margin-top: 75px;
+    }
+}
+@media (max-width: 1024px){
+    .hero-home{
+        min-height: 85vh;
     }
 }
 
@@ -710,7 +805,6 @@ form {
 
 .post{
     padding: 88px 0 0;
-    margin-bottom: -24px;
     &__wrapper{
         max-width: 945px;
         margin-left: auto;
@@ -882,6 +976,7 @@ form {
 }
 // =====================================
 .footer{
+    margin-top: -28px;
     text-align: center;
     color: var(--bege-light);
     &__wrapper{
