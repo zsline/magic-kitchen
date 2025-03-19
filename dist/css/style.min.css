@@ -533,6 +533,46 @@ form p {
   margin-bottom: 28px;
 }
 
+.navigation {
+  margin-top: 75px;
+}
+.navigation .nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.navigation .nav-links .page-numbers {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  background-color: var(--white);
+  color: var(--bege-dark);
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--bege-light);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation .nav-links .page-numbers.current {
+  background-color: var(--pistachio);
+  border: 1px solid var(--pistachio);
+  color: var(--bege-light);
+}
+.navigation .nav-links .prev, .navigation .nav-links .next {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 7px 14px;
+}
+.navigation .nav-links .prev {
+  background-image: url(../img/icons/prev.svg);
+}
+.navigation .nav-links .next {
+  background-image: url(../img/icons/next.svg);
+}
+
 .header {
   background-color: var(--pistachio);
   padding: 29.8px 0;

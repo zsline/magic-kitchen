@@ -351,6 +351,49 @@ form {
 }
 
 // ============================================
+// ========== WP навигация  ====================
+.navigation {
+    margin-top: 75px;
+    .nav-links{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+    .nav-links{
+       .page-numbers{
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0;
+        background-color: var(--white);
+        color: var(--bege-dark);
+        width: 32px;
+        height: 32px;
+        border: 1px solid var(--bege-light);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.current{
+            background-color: var(--pistachio);
+            border: 1px solid var(--pistachio);
+            color: var(--bege-light);
+        }
+    } 
+    .prev, .next{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 7px 14px;
+    }
+    .prev{
+        background-image: url(../img/icons/prev.svg);
+    } 
+    .next{
+        background-image: url(../img/icons/next.svg);
+    }
+    }
+}
+// ============================================
 //  Header =====================
 
 .header{
