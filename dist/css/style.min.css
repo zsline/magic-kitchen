@@ -180,7 +180,7 @@ html {
 
 body {
   font-family: "Manrope", sans-serif;
-  font-size: 16px;
+  font-size: clamp(0.88rem, 0.81rem + 0.27vw, 1rem);
   line-height: 140%;
   font-weight: 300;
   font-variant-numeric: lining-nums proportional-nums;
@@ -199,7 +199,7 @@ h1 {
 h2 {
   font-family: "PlayfairDisplay", serif;
   font-weight: 800;
-  font-size: 82px;
+  font-size: clamp(2rem, 0.38rem + 6.67vw, 5.13rem);
   line-height: 110%;
   color: var(--bege-dark);
 }
@@ -306,8 +306,8 @@ video {
 }
 
 .container {
-  max-width: 1160px;
-  padding: 0 10px;
+  max-width: 1180px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -320,7 +320,7 @@ video {
 .big-title {
   font-family: "PlayfairDisplay", serif;
   font-weight: 800;
-  font-size: 100px;
+  font-size: clamp(2rem, -0.21rem + 9.07vw, 6.25rem);
   line-height: 110%;
   color: var(--bege-dark);
   text-align: center;
@@ -328,7 +328,7 @@ video {
 
 .t-20, b {
   font-weight: 600;
-  font-size: 20px;
+  font-size: clamp(1.13rem, 1.06rem + 0.27vw, 1.25rem);
   line-height: 140%;
 }
 
@@ -338,6 +338,7 @@ video {
 }
 
 .btn {
+  position: relative;
   display: inline-block;
   padding: 14px 36px;
   background-color: var(--yellow);
@@ -345,8 +346,10 @@ video {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.12em;
+  text-align: center;
   border-radius: 50px;
   transition: all 0.3s;
+  z-index: 997;
 }
 
 .btn:hover {
@@ -368,7 +371,7 @@ video {
 .citate-author {
   font-family: "PlayfairDisplay", sans-serif;
   font-style: normal;
-  font-size: 32px;
+  font-size: clamp(1.25rem, 0.86rem + 1.6vw, 2rem);
   font-weight: 500;
   line-height: 130%;
   color: var(--bege-dark);
@@ -407,7 +410,7 @@ video {
 
 .citate {
   font-family: "PlayfairDisplay", serif;
-  font-size: 32px;
+  font-size: clamp(1.25rem, 0.86rem + 1.6vw, 2rem);
   line-height: 130%;
 }
 
@@ -542,7 +545,6 @@ form p {
   gap: 25px;
 }
 .navigation .nav-links .page-numbers {
-  display: block;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0;
@@ -555,6 +557,7 @@ form p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 0 0 auto;
 }
 .navigation .nav-links .page-numbers.current {
   background-color: var(--pistachio);
@@ -573,6 +576,11 @@ form p {
   background-image: url(../img/icons/next.svg);
 }
 
+@media (max-width: 374px) {
+  .navigation .nav-links {
+    gap: 15px;
+  }
+}
 .header {
   background-color: var(--pistachio);
   padding: 29.8px 0;
@@ -613,7 +621,7 @@ form p {
   z-index: 999;
 }
 
-@media (max-width: 748px) {
+@media (max-width: 768px) {
   .header {
     padding: 8px 0px;
   }
@@ -725,7 +733,7 @@ form p {
 }
 .about-home__wrapper {
   display: flex;
-  gap: 128px;
+  gap: clamp(2.5rem, -8.85rem + 23.66vw, 8rem);
 }
 .about-home__info {
   max-width: 555px;
@@ -786,7 +794,7 @@ form p {
 .new-home__item.big .new-home__item--title {
   font-family: "PlayfairDisplay", serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: clamp(1.38rem, 1.05rem + 1.33vw, 2rem);
   line-height: 110%;
   color: var(--bege-dark);
   transition: all 0.3s;
@@ -855,7 +863,95 @@ form p {
 
 @media (max-width: 1024px) {
   .hero-home {
-    min-height: 85vh;
+    min-height: 74vh;
+  }
+}
+@media (max-width: 768px) {
+  .about-home__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-home__img {
+    margin-left: 0;
+  }
+  .new-home__item {
+    width: 48%;
+  }
+  .new-home__item.big {
+    width: 48%;
+  }
+  .new-home__item.item-blog .new-home__item--img {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .hero-home {
+    margin-bottom: 50%;
+    min-height: auto;
+  }
+  .hero-home__img {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 69vw;
+    margin-top: -15%;
+  }
+  .hero-home .btn {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .new-home__item {
+    width: 100%;
+  }
+  .new-home__item.big {
+    width: 100%;
+  }
+  .new-home__item.item-blog .new-home__item--img {
+    width: 60%;
+  }
+  .new-home__item.big.item-blog.blog__item, .new-home__item.big {
+    padding: 40px 0 0;
+  }
+  .new-home__item.big {
+    padding-bottom: 40px;
+  }
+  .new-home__item.big.item-blog.blog__item .new-home__item--img {
+    aspect-ratio: 1.4/1;
+  }
+  .new-home__item.big.item-blog.blog__item .new-home__item--img img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .new-home__item.item-biseness .new-home__item--img {
+    width: 137px;
+    height: 137px;
+  }
+}
+@media (max-width: 440px) {
+  .about-home {
+    padding: 40px 0;
+  }
+  .about-home__img {
+    max-width: 134px;
+  }
+  .about-home h2 {
+    text-align: center;
+  }
+  .about-home__subtitle {
+    text-align: center;
+  }
+  .about-home__info .btn {
+    width: 100%;
+  }
+  .new-home {
+    padding-top: 50px;
+  }
+  .new-home h2 {
+    margin-bottom: 50px;
+  }
+  .new-home .btn {
+    width: 100%;
   }
 }
 .about-me {
@@ -878,7 +974,7 @@ form p {
 }
 .about-me__excerpt {
   font-family: "PlayfairDisplay", sans-serif;
-  font-size: 32px;
+  font-size: clamp(1.38rem, 1.05rem + 1.33vw, 2rem);
   line-height: 110%;
   font-style: normal;
   font-weight: 700;
@@ -911,7 +1007,7 @@ form p {
 }
 
 .about-diet {
-  margin-bottom: 183px;
+  margin-bottom: clamp(3.13rem, -1.2rem + 17.73vw, 11.44rem);
 }
 .about-diet .container {
   position: relative;
@@ -920,6 +1016,7 @@ form p {
   position: absolute;
   top: 54px;
   right: 220px;
+  z-index: -1;
 }
 .about-diet a {
   text-decoration: underline;
@@ -965,10 +1062,38 @@ form p {
   object-fit: cover;
 }
 
+@media (max-width: 854px) {
+  .about-diet__author {
+    flex-direction: column;
+  }
+}
+@media (max-width: 560px) {
+  .about-me__content {
+    margin-left: 0;
+  }
+  .about-me__content p {
+    margin-right: 0;
+  }
+  .about-me__accent, .about-diet__cats {
+    flex-direction: column;
+  }
+  .about-diet__cats {
+    align-items: center;
+    margin: 0;
+    margin-top: 30px;
+  }
+  .about-me__accent--img {
+    margin-bottom: 20px;
+  }
+  .about-diet__content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .blog {
   background-color: var(--light);
   padding-top: 71px;
-  padding-bottom: 146px;
+  padding-bottom: clamp(6.25rem, 4.84rem + 6.01vw, 9.13rem);
 }
 .blog h1 {
   text-align: center;
@@ -1010,6 +1135,11 @@ form p {
   margin-bottom: 30px;
 }
 
+@media (max-width: 440px) {
+  .blog__tags {
+    width: 100%;
+  }
+}
 .post {
   padding: 88px 0 0;
 }
@@ -1223,5 +1353,10 @@ form p {
   }
   to {
     opacity: 1;
+  }
+}
+@media (max-width: 374px) {
+  .hero-home h1 {
+    font-size: 48px;
   }
 }
