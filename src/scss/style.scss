@@ -65,7 +65,7 @@ nav a {
 nav a:hover, nav a:focus, nav a:active {
     color: var(--light);
 }
-@media (max-width: 748px){
+@media (max-width: 768px){
     nav a:hover, nav a:focus, nav a:active {
         color: var(--bege-dark);
     }
@@ -106,7 +106,7 @@ ol li:before {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow-x: hidden ;
 }
 .main{
     flex: 1 1 auto;
